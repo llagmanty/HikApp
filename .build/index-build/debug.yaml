@@ -1,0 +1,47 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "HikApp-arm64-apple-macosx-debug.module": ["<HikApp-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<HikApp-arm64-apple-macosx-debug.module>"]
+  "test": ["<HikApp-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources"]
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources"
+
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<HikApp-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule"]
+    outputs: ["<HikApp-arm64-apple-macosx-debug.module>"]
+
+  "C.HikApp-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule"]
+    description: "Compiling Swift Module 'HikApp' (12 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","HikApp","-emit-dependencies","-emit-module","-emit-module-path","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule","-output-file-map","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/output-file-map.json","-incremental","@/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources","-I","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","HikApp_main","-swift-version","5","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/Sources/","/Volumes/SCW/Development/GitHub/HikApp/Package.swift","/Volumes/SCW/Development/GitHub/HikApp/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

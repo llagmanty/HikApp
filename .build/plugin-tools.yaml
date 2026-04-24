@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "HikApp-arm64-apple-macosx-debug.exe": ["<HikApp-arm64-apple-macosx-debug.exe>"]
+  "HikApp-arm64-apple-macosx-debug.module": ["<HikApp-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<HikApp-arm64-apple-macosx-debug.exe>","<HikApp-arm64-apple-macosx-debug.module>"]
+  "test": ["<HikApp-arm64-apple-macosx-debug.exe>","<HikApp-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp":
+    is-mutated: true
+commands:
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp-entitlement.plist"]
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp-entitlement.plist"
+
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/sources"]
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/sources"
+
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/App.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.product/Objects.LinkFileList"
+
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<HikApp-arm64-apple-macosx-debug.exe>":
+    tool: phony
+    inputs: ["<HikApp-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    outputs: ["<HikApp-arm64-apple-macosx-debug.exe>"]
+
+  "<HikApp-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/App.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule"]
+    outputs: ["<HikApp-arm64-apple-macosx-debug.module>"]
+
+  "C.HikApp-arm64-apple-macosx-debug.exe":
+    tool: shell
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/App.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.product/Objects.LinkFileList"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/HikApp"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug","-o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp","-module-name","HikApp","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_HikApp_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-5.5/macosx","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx10.13","-Xlinker","-add_ast_path","-Xlinker","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.HikApp-arm64-apple-macosx-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp-entitlement.plist"]
+    outputs: ["<HikApp-arm64-apple-macosx-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/HikApp"
+    args: ["codesign","--force","--sign","-","--entitlements","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp-entitlement.plist","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp"]
+
+  "C.HikApp-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift","/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/sources"]
+    outputs: ["/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/App.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule"]
+    description: "Compiling Swift Module 'HikApp' (2 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","HikApp","-emit-dependencies","-emit-module","-emit-module-path","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule","-output-file-map","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/output-file-map.json","-incremental","-c","@/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/HikApp.build/sources","-I","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Volumes/SCW/Development/GitHub/HikApp/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","HikApp_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Volumes/SCW/Development/GitHub/HikApp/Sources/","/Volumes/SCW/Development/GitHub/HikApp/Package.swift","/Volumes/SCW/Development/GitHub/HikApp/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

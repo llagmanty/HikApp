@@ -1,0 +1,12 @@
+/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift
+/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift

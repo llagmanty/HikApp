@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:HikApp}",
+            "name": "Debug HikApp",
+            "target": "HikApp",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HikApp"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:HikApp}",
+            "name": "Release HikApp",
+            "target": "HikApp",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HikApp"
+        }
+    ]
+}

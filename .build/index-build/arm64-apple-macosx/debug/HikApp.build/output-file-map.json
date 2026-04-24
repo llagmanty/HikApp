@@ -1,0 +1,96 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/primary.swiftdeps"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView.dia"
+  },
+  "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor.d",
+    "object": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor.dia"
+  }
+}
