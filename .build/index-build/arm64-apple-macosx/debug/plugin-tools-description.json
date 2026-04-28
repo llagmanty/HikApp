@@ -1,6 +1,10 @@
 {
   "builtTestProducts" : [
-
+    {
+      "binaryPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.xctest/Contents/MacOS/HikAppPackageTests",
+      "packagePath" : "/Volumes/SCW/Development/GitHub/HikApp",
+      "productName" : "HikAppPackageTests"
+    }
   ],
   "copyCommands" : {
     "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp_HikApp.bundle/Info.plist" : {
@@ -31,7 +35,7 @@
   ],
   "swiftCommands" : {
     "C.HikApp-arm64-apple-macosx-debug.module" : {
-      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "fileList" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources",
       "importPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
@@ -49,7 +53,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/HealthKitManager.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/WeatherManager.swift"
         },
         {
           "kind" : "file",
@@ -69,7 +81,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WalkingFigureView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WeatherWidget.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/HomeMapBackground.swift"
         },
         {
           "kind" : "file",
@@ -85,11 +109,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/WelcomeView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/DerivedSources/resource_bundle_accessor.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "virtual",
@@ -107,15 +135,21 @@
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/App.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ContentView.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/Formatters.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HealthKitManager.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/LocationManager.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/WeatherManager.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HikingSession.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/ActiveHikeView.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/StatTile.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryStatCard.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/WalkingFigureView.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/WeatherWidget.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeView.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/HomeMapBackground.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/MapViewRepresentable.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/RouteMapView.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/SummaryView.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/WelcomeView.swift.o",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
@@ -145,19 +179,25 @@
         "-experimental-allow-module-with-compiler-errors",
         "-Xfrontend",
         "-empty-abi-descriptor",
-        "-I",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-        "-L",
-        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
         "-plugin-path",
-        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
         "-g",
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-Xcc",
         "-fPIC",
         "-Xcc",
@@ -177,18 +217,227 @@
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/HealthKitManager.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/WeatherManager.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WalkingFigureView.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WeatherWidget.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/HomeMapBackground.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/WelcomeView.swift",
         "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.HikAppPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/sources",
+      "importPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikAppTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "HikAppPackageTests",
+      "moduleOutputPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikAppPackageTests.swiftmodule",
+      "objects" : [
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/include/HikAppPackageTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "hikapp"
+      ],
+      "outputFileMapPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikAppPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.HikAppTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/sources",
+      "importPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Tests/FormattersTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Tests/HikingSessionTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikApp.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "HikAppTests",
+      "moduleOutputPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikAppTests.swiftmodule",
+      "objects" : [
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/FormattersTests.swift.o",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/HikingSessionTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "hikapp"
+      ],
+      "outputFileMapPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules/HikAppTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Volumes/SCW/Development/GitHub/HikApp/Tests/FormattersTests.swift",
+        "/Volumes/SCW/Development/GitHub/HikApp/Tests/HikingSessionTests.swift"
+      ],
+      "tempsPath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -197,7 +446,7 @@
   },
   "swiftTargetScanArgs" : {
     "HikApp" : [
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
       "-module-name",
       "HikApp",
       "-package-name",
@@ -206,15 +455,21 @@
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/App.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/ContentView.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Extensions/Formatters.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/HealthKitManager.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/WeatherManager.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Models/HikingSession.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/ActiveHikeView.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/StatTile.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/SummaryStatCard.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WalkingFigureView.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WeatherWidget.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/HomeMapBackground.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/MapViewRepresentable.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/RouteMapView.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/SummaryView.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/WelcomeView.swift",
       "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
@@ -244,19 +499,25 @@
       "-experimental-allow-module-with-compiler-errors",
       "-Xfrontend",
       "-empty-abi-descriptor",
-      "-I",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
-      "-L",
-      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
       "-plugin-path",
-      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
       "-g",
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-Xcc",
       "-fPIC",
       "-Xcc",
@@ -264,12 +525,155 @@
       "-package-name",
       "hikapp",
       "-driver-use-frontend-path",
-      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "HikAppPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "HikAppPackageTests",
+      "-package-name",
+      "hikapp",
+      "-c",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.derived/runner.swift",
+      "-I",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/include/HikAppPackageTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "hikapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "HikAppTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "HikAppTests",
+      "-package-name",
+      "hikapp",
+      "-c",
+      "/Volumes/SCW/Development/GitHub/HikApp/Tests/FormattersTests.swift",
+      "/Volumes/SCW/Development/GitHub/HikApp/Tests/HikingSessionTests.swift",
+      "-I",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "hikapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
     ]
   },
   "targetDependencyMap" : {
     "HikApp" : [
 
+    ],
+    "HikAppPackageTests" : [
+      "HikAppTests",
+      "HikApp"
+    ],
+    "HikAppTests" : [
+      "HikApp"
     ]
   },
   "testDiscoveryCommands" : {
@@ -305,7 +709,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/HealthKitManager.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/LocationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Managers/WeatherManager.swift"
         },
         {
           "kind" : "file",
@@ -325,7 +737,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WalkingFigureView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Components/WeatherWidget.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/HomeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/Maps/HomeMapBackground.swift"
         },
         {
           "kind" : "file",
@@ -341,12 +765,48 @@
         },
         {
           "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Sources/Views/WelcomeView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
       "outputFilePath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikApp.build/sources"
     },
-    "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+    "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppPackageTests.build/sources"
+    },
+    "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Tests/FormattersTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/SCW/Development/GitHub/HikApp/Tests/HikingSessionTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/HikAppTests.build/sources"
+    },
+    "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -355,10 +815,10 @@
         },
         {
           "kind" : "file",
-          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+      "outputFilePath" : "/Volumes/SCW/Development/GitHub/HikApp/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }
