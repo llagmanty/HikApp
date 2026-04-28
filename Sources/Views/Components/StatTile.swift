@@ -20,7 +20,7 @@ struct StatTile: View {
         }
         .frame(maxWidth: .infinity)
         .padding(10)
-        .background(.regularMaterial)
+        .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

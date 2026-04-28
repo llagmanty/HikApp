@@ -21,8 +21,12 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 
+	<key>NSMotionUsageDescription</key>
+	<string>HikApp counts your steps during a hike. Step data is only held in memory and deleted when the session ends.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>HikApp uses your location only while the app is open to draw your route and calculate hike stats. No location data is stored or transmitted.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>HikApp reads heart rate and active calories from your Apple Watch during a hike. This data is only held in memory and deleted when the session ends.</string>
 
 	<key>UILaunchScreen</key>
 	<dict/>

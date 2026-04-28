@@ -8,6 +8,9 @@ struct RouteMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let map = MKMapView()
         map.isUserInteractionEnabled = false
+        map.mapType = .mutedStandard
+        map.isPitchEnabled = false
+        map.showsBuildings = true
         map.delegate = context.coordinator
         map.pointOfInterestFilter = .includingAll
         return map
@@ -26,6 +29,14 @@ struct RouteMapView: UIViewRepresentable {
                 edgePadding: UIEdgeInsets(top: 48, left: 32, bottom: 48, right: 32),
                 animated: false
             )
+            // Tilt the summary overview to 3D after the region is set
+            let cam = MKMapCamera(
+                lookingAtCenter: map.region.center,
+                fromDistance: map.camera.altitude,
+                pitch: 45,
+                heading: map.camera.heading
+            )
+            map.setCamera(cam, animated: false)
         } else if let only = coordinates.first {
             map.setCenter(only, animated: false)
         }

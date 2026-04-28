@@ -46,4 +46,22 @@ struct HikingSession {
     var coordinates: [CLLocationCoordinate2D] {
         waypoints.map(\.coordinate)
     }
+
+    // MARK: - Health data (from Apple Watch via HealthKit)
+
+    var heartRateSamples: [(date: Date, bpm: Double)] = []
+    var activeCalories: Double = 0
+
+    var averageHeartRate: Double? {
+        guard !heartRateSamples.isEmpty else { return nil }
+        return heartRateSamples.map(\.bpm).reduce(0, +) / Double(heartRateSamples.count)
+    }
+
+    var maxHeartRate: Double? {
+        heartRateSamples.map(\.bpm).max()
+    }
+
+    var minHeartRate: Double? {
+        heartRateSamples.map(\.bpm).min()
+    }
 }

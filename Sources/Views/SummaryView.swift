@@ -107,6 +107,30 @@ struct SummaryView: View {
                     icon: "mappin.circle.fill",
                     color: .pink
                 )
+                if let avg = session.averageHeartRate {
+                    SummaryStatCard(
+                        label: "Avg Heart Rate",
+                        value: "\(Int(avg)) bpm",
+                        icon: "heart.fill",
+                        color: .red
+                    )
+                }
+                if let maxHR = session.maxHeartRate {
+                    SummaryStatCard(
+                        label: "Max Heart Rate",
+                        value: "\(Int(maxHR)) bpm",
+                        icon: "heart.circle.fill",
+                        color: .red
+                    )
+                }
+                if session.activeCalories > 0 {
+                    SummaryStatCard(
+                        label: "Calories",
+                        value: String(format: "%.0f kcal", session.activeCalories),
+                        icon: "flame.fill",
+                        color: .orange
+                    )
+                }
             }
             .padding(.horizontal)
         }
@@ -142,8 +166,12 @@ struct SummaryView: View {
             }
         }
         .padding(20)
-        .background(.regularMaterial)
+        .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 18))
         .padding(.horizontal)
     }
+}
+
+#Preview {
+    SummaryView(session: HikingSession(startTime: .now.addingTimeInterval(-3600), endTime: .now)) { }
 }

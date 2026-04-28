@@ -2,7 +2,6 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-/// Live map shown during an active hike — follows user position and draws the route polyline.
 struct MapViewRepresentable: UIViewRepresentable {
     let waypoints: [CLLocation]
     let currentLocation: CLLocation?
@@ -11,10 +10,24 @@ struct MapViewRepresentable: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let map = MKMapView()
         map.delegate = context.coordinator
+        map.mapType = .mutedStandard
         map.showsUserLocation = true
-        map.userTrackingMode = .follow
-        map.showsCompass = true
+        map.showsBuildings = true
+        map.showsCompass = false   // hide the default top-right compass
+        map.isPitchEnabled = true
         map.pointOfInterestFilter = .includingAll
+        map.userTrackingMode = .followWithHeading
+
+        // Custom compass pinned to the bottom-right, above the control panel
+        let compass = MKCompassButton(mapView: map)
+        compass.compassVisibility = .adaptive
+        compass.translatesAutoresizingMaskIntoConstraints = false
+        map.addSubview(compass)
+        NSLayoutConstraint.activate([
+            compass.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            compass.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -220)
+        ])
+
         return map
     }
 
@@ -28,6 +41,22 @@ struct MapViewRepresentable: UIViewRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator() }
 
     final class Coordinator: NSObject, MKMapViewDelegate {
+        private var centeredOnce = false
+
+        func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+            guard !centeredOnce, let loc = userLocation.location else { return }
+            centeredOnce = true
+            // Apply 3D camera on first real location fix
+            let cam = MKMapCamera(
+                lookingAtCenter: loc.coordinate,
+                fromDistance: 400,
+                pitch: 45,
+                heading: mapView.camera.heading
+            )
+            mapView.setCamera(cam, animated: true)
+            mapView.setUserTrackingMode(.followWithHeading, animated: false)
+        }
+
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             guard let polyline = overlay as? MKPolyline else {
                 return MKOverlayRenderer(overlay: overlay)

@@ -17,6 +17,11 @@ let package = Package(
             resources: [
                 .process("Info.plist")
             ]
+        ),
+        .testTarget(
+            name: "HikAppTests",
+            dependencies: ["HikApp"],
+            path: "Tests"
         )
     ]
 )
