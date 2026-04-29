@@ -36,6 +36,21 @@ struct ActiveHikeView: View {
                 controlPanel
             }
         }
+        .overlay(alignment: .topLeading) {
+            if weatherManager.temperature != nil || weatherManager.isFetching {
+                WeatherWidget(
+                    temperature: weatherManager.temperature,
+                    symbolName: weatherManager.symbolName,
+                    isFetching: weatherManager.isFetching
+                )
+                .padding(.leading, 16)
+                .padding(.top, 110)
+            }
+        }
+        .task(id: locationManager.currentLocation) {
+            guard let loc = locationManager.currentLocation else { return }
+            await weatherManager.fetchIfNeeded(for: loc)
+        }
         .onAppear(perform: beginSession)
         .onDisappear(perform: stopTicker)
         .fullScreenCover(isPresented: $showingSummary, onDismiss: {

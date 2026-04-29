@@ -18,14 +18,14 @@ struct MapViewRepresentable: UIViewRepresentable {
         map.pointOfInterestFilter = .includingAll
         map.userTrackingMode = .followWithHeading
 
-        // Custom compass pinned to the bottom-right, above the control panel
+        // Custom compass pinned to the top-right corner, below the status banner
         let compass = MKCompassButton(mapView: map)
-        compass.compassVisibility = .adaptive
+        compass.compassVisibility = .visible
         compass.translatesAutoresizingMaskIntoConstraints = false
         map.addSubview(compass)
         NSLayoutConstraint.activate([
             compass.trailingAnchor.constraint(equalTo: map.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            compass.bottomAnchor.constraint(equalTo: map.bottomAnchor, constant: -220)
+            compass.topAnchor.constraint(equalTo: map.safeAreaLayoutGuide.topAnchor, constant: 110)
         ])
 
         return map
